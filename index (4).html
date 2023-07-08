@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dijkstra's Algorithm</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Dijkstra's Algorithm</h1>
+  </header>
+
+  <div class="container">
+    <div class="input-section">
+      <h2>Input Graph</h2>
+      <textarea id="graphInput" rows="10" cols="50" placeholder="Enter the graph structure and weights..."></textarea>
+
+      <h2>Start and End Nodes</h2>
+      <div>
+        <label for="startNode">Start Node:</label>
+        <input type="text" id="startNode" placeholder="Enter the start node...">
+      </div>
+      <div>
+        <label for="endNode">End Node:</label>
+        <input type="text" id="endNode" placeholder="Enter the end node...">
+      </div>
+
+      <button onclick="calculateShortestPath()">Calculate Shortest Path</button>
+    </div>
+    <div id="result" class="result-section">
+      <h2>Shortest Path</h2>
+      <div id="path"></div>
+      <div id="weight"></div>
+    </div>
+  </div>
+
+  <script src="dijkstra.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

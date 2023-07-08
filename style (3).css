@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background: linear-gradient(to right, #e96443, #904e95);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #4d4747;
+  font-weight: 500;
+  opacity: 0.9;
+  font-size: 1.4rem;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .2)
+}
+
+.input-section,
+.result-section {
+
+  background: rgba(255, 255, 255, .5);
+  padding: 3rem;
+  height: 320px;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+  text-align: center;
+
+
+  width: 400px;
+}
+
+.input-section h2,
+.result-section h2 {
+  margin-top: 0;
+  color: #333;
+  text-shadow: 2px 2px 6px #00000040;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+button {
+  background-color: #4b4949;
+  border: firebrick 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flexbox;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 40%;
+  margin-left: 40%;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  background-color: #4b4949;
+
+}
+
+#path {
+  margin-top: 10px;
+}
+
+#weight {
+  margin-top: 10px;
+}
+
+/* Animated CSS for Dijkstra's Algorithm */
+
+body {
+  background: linear-gradient(to right, #e96443, #904e95);
+  animation: background-gradient 10s infinite linear alternate;
+}
+
+.container {
+  animation: fade-in 1s ease-in-out;
+}
+
+.result-section {
+  animation: slide-up 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes background-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+#path {
+  font-weight: bold;
+  color: #ff1486;
+  animation: path-fade-in 1s ease-in-out;
+}
+
+@keyframes path-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#weight {
+  color: #00ffb3;
+}
